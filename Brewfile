@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "sidneys/homebrew"
 
 # Distributed revision control system
 brew "git"
