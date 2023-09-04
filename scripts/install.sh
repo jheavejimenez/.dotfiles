@@ -6,7 +6,7 @@ BREWFILE_PATH=~/.dotfiles/Brewfile
 
 # Function to display log message
 log() {
-    local messages="$1"
+    local message="$1"
     echo "$(date +'%Y-%m-%d %H:%M:%S') - $message" >> "$LOG_FILE_PATH"
 }
 
@@ -44,7 +44,7 @@ fi
 if [ -f "$BREWFILE_PATH" ]; then
     show_status "Installing packages from Brewfile"
     log "Installing packages from Brewfile"
-    brew bundle --file="$BREWFILE_PATH"
+#    brew bundle --file="$BREWFILE_PATH"
 else
     show_status "Brewfile not found at $BREWFILE_PATH. Make sure it exists."
     log "Brewfile not found at $BREWFILE_PATH. Make sure it exists."
@@ -65,7 +65,7 @@ for pair in "${dotfiles[@]}"; do
     if [ -e "$source" ]; then
         show_status "Creating symbolic link for $source"
         log "Creating symbolic link for $source"
-        ln -s "$source" "$target"
+#        ln -s "$source" "$target"
     else
         show_status "Source file $source does not exist."
         log "Source file $source does not exist."
