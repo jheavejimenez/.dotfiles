@@ -18,7 +18,7 @@ show_status() {
 
 # Check if there's a log file
 if [ -e "$LOG_FILE_PATH" ]; then
-    read -p "Log file '$log_file' exists. Clear its contents? (y/n): " answer
+    read -p "Log file '$LOG_FILE_PATH' exists. Clear its contents? (y/n): " answer
     if [ "$answer" == "y" ]; then
         > "$LOG_FILE_PATH"
         echo "Log file cleared."
