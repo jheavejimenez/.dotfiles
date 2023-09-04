@@ -1,5 +1,5 @@
-[user]
-  name = Jheave
-  email = changeme@email.com
-
+[includeIf "gitdir:~/code/personal/"]
+    path = ~/code/personal/.gitconfig
+[core]
+excludesfile = ~/.gitignore
 
