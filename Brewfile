@@ -2,7 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/services"
 tap "mongodb/brew"
-tap "sidneys/homebrew"
 
 # Library for command-line editing
 brew "readline"
