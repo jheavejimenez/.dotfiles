@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/services"
 tap "mongodb/brew"
+tap "romkatv/powerlevel10k"
 
 # Library for command-line editing
 brew "readline"
@@ -47,6 +48,9 @@ brew "redis"
 
 # Terminal multiplexer
 brew "tmux"
+
+# A Zsh Theme
+brew "romkatv/powerlevel10k/powerlevel10k"
 
 # High-performance, schema-free, document-oriented database
 brew "mongodb/brew/mongodb-community"
