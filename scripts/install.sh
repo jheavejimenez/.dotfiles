@@ -42,7 +42,6 @@ fi
 
 # Define an array of dot file pairs (source and target)
 dotfiles=(
-    "~/.dotfiles/.zshrc ~/.zshrc"
     "~/.dotfiles/.gitconfig ~/.gitconfig"
     "~/.dotfiles/.zprofile ~/.zprofile"
     # Add more dot file pairs here
