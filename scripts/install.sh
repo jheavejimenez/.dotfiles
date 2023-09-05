@@ -57,6 +57,7 @@ for pair in "${dotfiles[@]}"; do
         show_status "Creating symbolic link for $source"
         log "Creating symbolic link for $source"
         ln -s "$source" "$target"
+        exec $SHELL
     else
         show_status "Source file $source does not exist."
         log "Source file $source does not exist."
