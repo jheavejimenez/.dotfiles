@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "romkatv/powerlevel10k"
 
 # Distributed revision control system
 brew "git"
@@ -28,9 +27,6 @@ brew "node"
 
 # JavaScript package manager
 brew "yarn"
-
-# A Zsh Theme
-brew "romkatv/powerlevel10k/powerlevel10k"
 
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
