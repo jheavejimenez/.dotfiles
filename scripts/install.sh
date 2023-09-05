@@ -42,7 +42,6 @@ fi
 
 # Define an array of dot file pairs (source and target)
 dotfiles=(
-    "~/.dotfiles/.zshrc ~/.zshrc"
     "~/.dotfiles/.gitconfig ~/.gitconfig"
     "~/.dotfiles/.zprofile ~/.zprofile"
     # Add more dot file pairs here
@@ -64,13 +63,3 @@ for pair in "${dotfiles[@]}"; do
         log "Source file $source does not exist."
     fi
 done
-
-# Check if the Brewfile exists
-if [ -f "$BREWFILE_PATH" ]; then
-    show_status "Installing packages from Brewfile"
-    log "Installing packages from Brewfile"
-    brew bundle --file="$BREWFILE_PATH"
-else
-    show_status "Brewfile not found at $BREWFILE_PATH. Make sure it exists."
-    log "Brewfile not found at $BREWFILE_PATH. Make sure it exists."
-fi
