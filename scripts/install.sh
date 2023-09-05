@@ -63,3 +63,5 @@ for pair in "${dotfiles[@]}"; do
         log "Source file $source does not exist."
     fi
 done
+
+show_status "Please Restart your terminal"
