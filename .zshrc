@@ -89,25 +89,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# zlib
-export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
-
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# plenv
-export PATH="$HOME/.plenv/bin:$PATH"
-eval "$(plenv init -)"
-
-# jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -133,20 +114,6 @@ eval "$(jenv init -)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # alias
-alias startmongo="brew services start mongodb-community@6.0"
-alias stopmongo="brew services stop mongodb-community@6.0"
-
-alias startredis="brew services start redis"
-alias stopredis="brew services stop redis"
-
-alias startmysql="brew services start mysql"
-alias stopmysql="brew services stop mysql"
-
-alias listservices="brew services list"
-
-# both redis and mongodb services aliases
-alias startflservices="brew services start mongodb-community@6.0 && brew services start redis"
-alias stopflservices="brew services stop mongodb-community@6.0 && brew services stop redis"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
