@@ -33,8 +33,11 @@ You have two options to complete this step: using an install script or doing it 
 # Change your directory to the 'scripts' folder:
 cd scripts
 
-# Run the install script:
+# Run the install script: This will install homebrew then create a symlink
 bash install.sh
+
+# Run the install script for brew files:
+bahs install_brew_files.sh
 ```
 
 The Install script automates the Homebrew installation and Symlinks setup, making the process quick and hassle-free.
