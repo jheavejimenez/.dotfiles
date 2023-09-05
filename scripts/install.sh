@@ -2,7 +2,6 @@
 
 # Constant
 LOG_FILE_PATH="logs/installation.log"
-BREWFILE_PATH=~/.dotfiles/Brewfile
 
 # Function to display log message
 log() {
@@ -63,5 +62,3 @@ for pair in "${dotfiles[@]}"; do
         log "Source file $source does not exist."
     fi
 done
-
-show_status "Please Restart your terminal"
