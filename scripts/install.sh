@@ -60,8 +60,10 @@ setup_homebrew_bundle() {
 setup_symlink() {
   # define an array of dot file pairs (source and target)
   dotfiles=(
-      "~/.dotfiles/.gitconfig ~/.gitconfig"
       "~/.dotfiles/.zprofile ~/.zprofile"
+      "~/.dotfiles/.zshrc ~/.zshrc"
+      "~/.dotfiles/.tmux.conf ~/.tmux.conf"
+
       # Add more dot file pairs here
   )
 
